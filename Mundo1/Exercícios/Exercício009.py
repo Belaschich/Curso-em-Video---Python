@@ -1,15 +1,16 @@
 #Faça um programa que leia um número inteiro qualquer e mostre na tela a sua Tabuada.
 
-num= int(input('Digite um número inteiro: '))
+num= int(input('Digite um número para mostrar sua tabuada: '))
 
-print('Tabuada do número {}\n'.format(num), 
-      '{} X 1 = {}\n'.format(num, num),
-      '{} X 2 = {}\n'.format(num, num*2),
-      '{} X 3 = {}\n'.format(num, num*3),
-      '{} X 4 = {}\n'.format(num, num*4),
-      '{} X 5 = {}\n'.format(num, num*5),
-      '{} X 6 = {}\n'.format(num, num*6),
-      '{} X 7 = {}\n'.format(num, num*7),
-      '{} X 8 = {}\n'.format(num, num*8),
-      '{} X 9 = {}\n'.format(num, num*9),
-      '{} X 10 = {}\n'.format(num, num*10))
+print('Tabuada do número {}\n'.format(num),
+      '{} X {:2} = {:2}\n'.format(num, 1, num*1),
+      '{} X {:2} = {:2}\n'.format(num, 2, num*2),
+      '{} X {:2} = {:2}\n'.format(num, 3, num*3),
+      '{} X {:2} = {:2}\n'.format(num, 4, num*4),
+      '{} X {:2} = {:2}\n'.format(num, 5, num*5),
+      '{} X {:2} = {:2}\n'.format(num, 6, num*6),
+      '{} X {:2} = {:2}\n'.format(num, 7, num*7),
+      '{} X {:2} = {:2}\n'.format(num, 8, num*8),
+      '{} X {:2} = {:2}\n'.format(num, 9, num*9),
+      '{} X {:2} = {:2}\n'.format(num, 10, num*10)
+      )

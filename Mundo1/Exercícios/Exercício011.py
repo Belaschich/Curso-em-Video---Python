@@ -7,4 +7,4 @@ l=float(input('Digite a largura da parede: '))
 area=(h*l)
 g=((area/2))
 
-print('Uma parede de {:.2f} m² irá precisar de {:.2f} galão(ões) de Tinta.'.format(area, g))
+print('Uma parede de {:.2f} m² irá precisar de {:.2f} litros de Tinta.'.format(area, g))
