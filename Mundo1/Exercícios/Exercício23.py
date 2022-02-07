@@ -3,13 +3,10 @@
 
 n = int(input('Digite um número de 0 até 9999: '))
 
-U = n%10
-n =(n - U)//10 
-D = n%10
-n =(n - D)//10
-C = n%10
-n =(n - C)//10
-M = n
+U = n //1 %10
+D = n //10 %10
+C = n //100 %10
+M = n //1000 %10
 
 print('Unidade: {}\n'
       'Dezena: {}\n'
