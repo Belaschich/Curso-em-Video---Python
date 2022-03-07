@@ -4,7 +4,7 @@
 #Primeiro = Ana
 #último - Souza
 
-nc = input('Digite um nome completo:')
+nc = str(input('Digite um nome completo:')).strip()
 lista = nc.split()
 
 P = lista[0]
