@@ -1,0 +1,36 @@
+ANSI
+\033["stilo;texto;back"m
+
+\033[0;33;44m
+
+Stilo
+0 nenhum
+1 negrito
+4 suplinhado
+7 inverter as configurações
+
+Texto
+30 - Branco
+31 - vermelho
+32 - verde
+33 - amarelo
+34 - azul
+35 - Lilas
+36 - verde agua
+37 - cinza
+
+back
+
+40 - Branco
+41 - vermelho
+42 - verde
+43 - amarelo
+44 - azul
+45 - Lilas
+46 - verde agua
+47 - cinza
+
+
+
+
+
