@@ -8,3 +8,17 @@ mostrando uma mensagem no final, de acordo com a média atingida:
 
 – Média 7.0 ou superior: APROVADO
 '''
+n1= float(input("Digite a primeira nota: "))
+
+n2= float(input("Digite a segunda nota: "))
+
+media= ((n1+n2)/2)
+
+if media < 5:
+    print("Sua nota final foi {}, por isso você está REPROVADO!".format (media))
+
+elif media >= 7:
+    print("Sua nota final foi {}, por isso você está APROVADO!".format (media))
+
+else:
+    print("Sua nota final foi {}, por isso você está RECUPERAÇAO!".format (media))
