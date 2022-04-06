@@ -5,8 +5,18 @@ o usuário escolher qual será a base de conversão:
 '''
 
 n= int(input("Digite um número qualquer: "))
-menu= int(input("Qual base de conversão, gostaria de usar?", end=  
-            "1- binário", end =
-            "2- octal", end=
-            "3- hexadecimal"))
 
+menu= int(input('''Qual base de conversão, gostaria de usar? 
+            1- binário
+            2- octal 
+            3- hexadecimal
+            Opção: '''))
+
+if menu == 1:
+    print("O número digitado {} em Binário é {}".format(n, bin(n)[2:]))
+elif menu == 2:
+    print("O número digitado {} em Octal é {}".format(n, oct(n)[2:]))
+elif menu == 3:
+    print("O número digitado {} em Octal é {}".format(n, hex(n)[2:]))
+else:
+    print("Menu inválido, tente novamente!")
