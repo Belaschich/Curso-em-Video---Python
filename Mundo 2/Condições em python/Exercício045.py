@@ -3,24 +3,23 @@ Crie um programa que faça o computador jogar Jokenpô com você.
 '''
 
 import random
-Pedra = 1
-Papel = 2
-Tesoura = 3
 
-jogador= int(input("Escolha entre: \n" 
-    "1- Pedra \n" 
-    "2- Papel \n" 
-    "3- Tesoura \n" ))
+jogador= input("Escolha entre: \n" 
+    "Pedra \n" 
+    "Papel \n" 
+    "Tesoura \n" ).upper().strip()
 
-pc = [1, 2, 3]
+pc = ['PEDRA', 'PAPEL', 'TESOURA']
 
 jogo = random.choice(pc)
 
-if jogador == jogo:
-    print("O computador jogou {} e você  {}, nulo".format(jogo, jogador))
-elif jogador == 1 and jogo == 3:
-    print("O computador jogou {} e você  {}, Você Ganhou!!!".format(jogo, jogador))
-elif jogador == 2 and jogo == 3:
+if jogo == jogador:
+    print("O computador jogou {} e você  {}, Empete!".format(jogo, jogador))
+elif jogo == 'PEDRA' and jogador == 'TESOURA':
+    print("O computador jogou {} e você  {}, O Computador Ganhou!!!".format(jogo, jogador))
+elif jogo == 'TESOURA' and jogador == 'PAPEL':
+    print("O computador jogou {} e você  {}, O Computador Ganhou!!!".format(jogo, jogador))
+elif jogo == 'PAPEL' and jogador == 'PEDRA':
     print("O computador jogou {} e você  {}, O Computador Ganhou!!!".format(jogo, jogador))
 else:
     print("O computador jogou {} e você  {}, Você Ganhou!!!".format(jogo, jogador))
