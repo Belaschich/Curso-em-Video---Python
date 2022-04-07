@@ -9,7 +9,7 @@ jogador= input("Escolha entre: \n"
     "Papel \n" 
     "Tesoura \n" ).upper().strip()
 
-pc = ['PEDRA', 'PAPEL', 'TESOURA']
+pc = ('PEDRA', 'PAPEL', 'TESOURA')
 
 jogo = random.choice(pc)
 
