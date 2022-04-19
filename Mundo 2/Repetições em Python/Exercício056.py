@@ -10,6 +10,7 @@ idmaior = 0
 nmaior = []
 contsx = 0
 for x in range (1, 5):
+    print(f'----------------- Pessoa {x} -----------------')
     nome = input('Digite seu nome: ')
     idade = int(input('Digite a sua idade: '))
     sx = input('Digite seu genero F- Feminino, M- masculino: ').strip().upper()
@@ -24,6 +25,8 @@ for x in range (1, 5):
     if idade > idmaior and sx =='M':
         idmaior = idade
         nmaior = nome
+    else:
+        print('Nenhum Homem no Grupo')
 
 print(f'A média de idade do grupo é {md}')
 print(f'O homem mais velho tem {idmaior} anos e se chama: {nmaior}')
